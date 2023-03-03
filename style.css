@@ -133,6 +133,24 @@
     background: url("images/image2.png");
 }
 
+.main__button
+{
+    width: 87px;
+    height: 26px;
+    background: #DD783F;
+    text-align: center;
+}
+
+.main__button-text
+{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .main__span
 {
     font-family: 'Lora';
