@@ -1,247 +1,236 @@
-.header__background {
-    z-index: 2;
-    background: black url("");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    max-width: 1440px;
-    width: 100%;
+.page
+{
+    margin: 0;
 }
 
-.header__text1 {
-    margin-top: 10%;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.02;
-    font-size: 50px;
-    text-align: center;
-    letter-spacing: 2px;
+.header
+{
+    position: absolute;
 }
 
-.header__text2 {
-    font-family: 'Oxygen';
-    font-style: normal;
-    margin-top: -2%;
-    color: #FFFFFF;
-    opacity: 0.63;
-    line-height: 1.18;
-    font-size: 17px;
-    text-align: center;
-}
-
-.menu__text {
+.header__text
+{
     font-family: 'Lora';
     padding-top: 1%;
     margin: 0% 10% 0%;
-    font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 1;
     color: #FFFFFF;
 }
 
-.menu__link {
-    z-index: 1;
-    margin-top: -1.5%;
+.header__menu
+{
+    margin-top: -2%;
+    width: 100%;
     padding-left: 60%;
-    word-spacing: 40px;
 }
 
-.menu__link a {
+.header__ref
+{
+    font-size: 17px;
+    line-height: 1.18;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
-.menu__link a:hover {
-    color: #DD783F;
+.logo
+{
+    background: black url("Images/logo.png") no-repeat;
+    background-size: 100%;
+    height: 500px;
+    max-width: 1920px;
+    width: 100%;
 }
 
-.menu__button {
-    z-index: 1;
-    height: 44px;
-    font-weight: 167px;
-    color: white;
-    background-color: #DD783F;
-    border-width: 0px;
-    border-radius: 3px;
-    font-size: 13px;
-    line-height: 1.53;
-    height: 44px;
-    width: 167px;
-    margin: 5% 45% 95%;
-    font-family: Oxygen;
-    font-style: Regular;
+.logo__h1
+{
     text-align: center;
-}
-
-.body__link {
+    line-height: 51px;
+    font-size: 50px;
     font-family: 'Lora';
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.42;
-    text-align: center;
-    word-spacing: 90px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 1440px;
-    background: white;
+    color: #ffffff;
 }
 
-.body__link a {
+.logo__description
+{
+    text-align: center;
+    line-height: 20px;
+    font-size: 17px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 63%;
+}
+
+.logo__button
+{
+    text-align: center;
+    margin: 5% 45% auto;
+    width: 167px;
+    height: 44px;
+    background: #DD783F;
+    border: 0px;
+    border-radius: 3px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.menu
+{
+    max-width: 1920px;
+    width: 100%;
+    height: 65px;
+    word-spacing: 50px;
+    text-align: center;
+    padding: 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.menu__ref
+{
     text-decoration: none;
     color: #768088;
+    line-height: 20px;
+    font-size: 14px;
 }
 
-.body__link a:hover {
-    color: #DD783F;
-}
-
-.block__name {
-    font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.35;
-    letter-spacing: 2px;
-    width: 1440px;
+.section__h2
+{
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #DEDEDE;
     text-underline-offset: 16px;
-    background: #F7F7F7;
+    color: #2E2E2E;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-.body__background {
-    width: 1440px;
-    background: #F7F7F7;
-}
-
-.block__element1 {
-    background: url("Pictures/The Road Ahead.png");
+.main
+{
     background-repeat: no-repeat;
+    max-width: 460px;
+    width: 100%;
     height: 280px;
-    width: 460px;
+    border-radius: 3px;
 }
 
-.block__element2 {
-    background: url("Pictures/From Top Down.png");
-    background-repeat: no-repeat;
-    height: 280px;
-    width: 460px;
+.main_first
+{
+    background: url("images/image1.png");
 }
 
-.block__element_p1 {
-    padding-top: 157px;
+.main_second
+{
+    background: url("images/image2.png");
+}
+
+.main__span
+{
     font-family: 'Lora';
-    font-style: normal;
     font-weight: 400;
     font-size: 27px;
-    line-height: 1.13;
-    color: white;
-    padding-left: 4.35%;
-    padding-bottom: 0px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
 
-.block__element_p2 {
+.main__text
+{
     font-family: 'Oxygen';
-    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.78px;
-    color: white;
-    opacity: 0.7;
-    padding-left: 4.35%;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 70%;
 }
 
-.block__element_img {
-    padding-left: 4.35%;
+.author-foto
+{
+    width: 26px;
 }
 
-.block__element_special {
-    position: absolute;
-    background: #DD783F;
-    border-radius: 2px;
-    color: white;
-    width: 87px;
-    height: 26px;
+.main-info__author-date
+{
+    font-family: 'Oxygen';
+    font-weight: 400;
     font-size: 12px;
-    line-height: 2.16;
-    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    opacity: 70%;
 }
 
-.block__element_name {
-    font-family: 'Oxygen';
-    font-style: normal;
-    color: white;
-    opacity: 0.7;
-}
-
-.block__element_date {
-    font-family: 'Oxygen';
-    font-style: normal;
-    color: white;
-    opacity: 0.7;
-}
-
-.block2__element {
-    background: white;
+.secondary
+{
     width: 296px;
+    height: 291px;
+    color: #ffffff;
 }
 
-.block2__element_name {
+.secondary__img
+{
+    width: 296px;
+    height: 150px;
+}
+
+.secondary__span
+{
     font-family: 'Lora';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.31;
+    line-height: 21px;
+    color: #101315;
 }
 
-.block2__element_p1 {
+.secondary__text
+{
     font-family: 'Oxygen';
-    font-style: normal;
     font-weight: 400;
     font-size: 13px;
-    line-height: 1.46;
+    line-height: 19px;
     color: #7A7A7A;
 }
 
-.block2__element_person {
+.secondary-info__author-date
+{
     font-family: 'Oxygen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 3.18;
-    color: #999999;
-}
-
-.block2__element_date {
-    font-family: 'Oxygen';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 2.9;
+    line-height: 35px;
     color: #999999;
 }
 
-footer {
-    background: url("Pictures/Footer.png");
-    max-width: 1440px;
+.footer
+{
+    background: url(images/footer.png);
+    max-width: 1920px;
     width: 100%;
     height: 89px;
-    background-repeat: no-repeat;
 }
 
-footer nav {
-    word-spacing: 20px;
+.footer__text
+{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #ffffff;
 }
 
-footer a {
-    opacity: 0.6;
+.footer__ref
+{
     text-decoration: none;
-    color: white;
-}
-
-footer a:hover {
-    color: #DD783F;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 60%;
 }

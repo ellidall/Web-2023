@@ -1,0 +1,104 @@
+.page
+{
+    margin: 0;
+}
+
+.header__text
+{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #2E2E2E;
+}
+
+.header__menu
+{
+    margin-top: -2%;
+    width: 100%;
+    padding-left: 60%;
+}
+
+.header__ref
+{
+    text-decoration: none;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #2E2E2E;
+}
+
+.logo__h1
+{
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #2E2E2E;
+}
+
+.logo__description
+{
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #2E2E2E;
+    opacity: 63%;
+}
+
+.logo__img
+{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0% 0% 7%
+}
+
+.article__text
+{
+    margin: 0% 13% 0%;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #101315;
+}
+
+.footer
+{
+    background: url(images/footer.png);
+    max-width: 1920px;
+    width: 100%;
+    height: 89px;
+    margin: 7% 0% 0%;
+}
+
+.footer__text
+{
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.footer__ref
+{
+    text-decoration: none;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 60%;
+}
