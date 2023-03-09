@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.header__text
+.heading__name
 {
     font-family: 'Lora';
     font-weight: 400;
@@ -12,14 +12,14 @@
     color: #2E2E2E;
 }
 
-.header__menu
+.heading__menu
 {
     margin-top: -2%;
     width: 100%;
     padding-left: 60%;
 }
 
-.header__ref
+.heading__ref
 {
     text-decoration: none;
     font-family: 'Oxygen';
@@ -83,7 +83,7 @@
     margin: 7% 0% 0%;
 }
 
-.footer__text
+.footer__name
 {
     font-family: 'Lora';
     font-weight: 400;
