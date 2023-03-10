@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.heading__name
+.heading__title
 {
     font-family: 'Lora';
     font-weight: 400;
@@ -12,14 +12,14 @@
     color: #2E2E2E;
 }
 
-.heading__menu
+.heading-nav
 {
     margin-top: -2%;
     width: 100%;
     padding-left: 60%;
 }
 
-.heading__ref
+.heading-nav__ref
 {
     text-decoration: none;
     font-family: 'Oxygen';
@@ -32,7 +32,7 @@
     color: #2E2E2E;
 }
 
-.logo__h1
+.logo__title
 {
     font-family: 'Lora';
     font-style: normal;
@@ -56,14 +56,14 @@
     opacity: 63%;
 }
 
-.logo__img
+.logo-img
 {
     max-width: 1920px;
     width: 100%;
     margin: 0% 0% 7%
 }
 
-.article__text
+.post__text
 {
     margin: 0% 13% 0%;
     font-family: 'Oxygen';
@@ -74,7 +74,7 @@
     color: #101315;
 }
 
-.footer
+.basement
 {
     background: url(images/footer.png);
     max-width: 1920px;
@@ -83,7 +83,7 @@
     margin: 7% 0% 0%;
 }
 
-.footer__name
+.basement__title
 {
     font-family: 'Lora';
     font-weight: 400;
@@ -92,7 +92,7 @@
     color: #ffffff;
 }
 
-.footer__ref
+.basement-nav__ref
 {
     text-decoration: none;
     font-family: 'Oxygen';

@@ -8,7 +8,7 @@
     position: absolute;
 }
 
-.heading__name
+.heading__title
 {
     font-family: 'Lora';
     padding-top: 1%;
@@ -19,14 +19,14 @@
     color: #FFFFFF;
 }
 
-.heading__menu
+.heading-nav
 {
     margin-top: -2%;
     width: 100%;
     padding-left: 60%;
 }
 
-.heading__ref
+.heading-nav__ref
 {
     font-family: 'Oxygen';
     font-size: 17px;
@@ -44,7 +44,7 @@
     width: 100%;
 }
 
-.logo__h1
+.logo__title
 {
     text-align: center;
     line-height: 51px;
@@ -124,12 +124,12 @@
     border-radius: 3px;
 }
 
-.featured-post_img_first
+.featured-post_img_the-road-ahead
 {
     background: url("images/image1.png");
 }
 
-.featured-post_img_second
+.featured-post_img_from-top-down
 {
     background: url("images/image2.png");
 }
@@ -169,7 +169,17 @@
     opacity: 70%;
 }
 
-.main-info__author-date
+.featured-post-info__author
+{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #ffffff;
+    opacity: 70%;
+}
+
+.featured-post-info__date
 {
     font-family: 'Oxygen';
     font-weight: 400;
@@ -224,7 +234,7 @@
     color: #7A7A7A;
 }
 
-.secondary-info__author-date
+.recent-post-info__author
 {
     font-family: 'Oxygen';
     font-weight: 400;
@@ -233,7 +243,16 @@
     color: #999999;
 }
 
-.footer
+.recent-post-info__date
+{
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    color: #999999;
+}
+
+.basement
 {
     background: url(images/footer.png);
     max-width: 1920px;
@@ -241,7 +260,7 @@
     height: 89px;
 }
 
-.footer__name
+.basement__title
 {
     font-family: 'Lora';
     font-weight: 400;
@@ -250,7 +269,7 @@
     color: #ffffff;
 }
 
-.footer__ref
+.basement-nav__ref
 {
     text-decoration: none;
     font-family: 'Oxygen';
