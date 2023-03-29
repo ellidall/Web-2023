@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <title>Blog</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="../static/css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
   </head>
   <body class="page">
+
 
     <header class="heading">
       <span class="heading__title">Escape.</span>
@@ -33,99 +34,111 @@
 
     <section class="featured-posts">
       <h2 class="featured-posts__heading">Featured Posts</h2>
-      <div class="featured-post featured-post_img_the-road-ahead">  
-        <span class="featured-post__heading">The Road Ahead</span>
-        <p class="featured-post__description">The road ahead might be paved - it might not be.</p>
+      {{ range .FeaturedPosts }}
+      <div class="featured-post {{ .ImgModifier }}"> 
+        <div class="{{ .ButtonModifier }}">{{ .ButtonText }}</div> 
+        <span class="featured-post__heading">{{ .Title }}</span>
+        <p class="featured-post__description">{{ .Subtitle }}</p>
         <div class="featured-post-info">
-          <img class="featured-post-info__author-photo" src="images/face1.png" alt="Face">
-          <span class="featured-post-info__author">Mat Vogels</span>
-          <span class="featured-post-info__date">September 25, 2015</span>
+          <img class="featured-post-info__author-photo" src="{{ .AuthorImg }}" alt="Face">
+          <span class="featured-post-info__author">{{ .Author }}</span>
+          <span class="featured-post-info__date">{{ .PublishDate }}</span>
         </div>  
       </div>
-      <div class="featured-post featured-post_img_from-top-down"> 
+      {{ end }}
+      <!-- <div class="featured-post featured-post__img_from-top-down"> 
         <div class="featured-post__button">Adventure</div> 
         <span class="featured-post__heading">From Top Down</span>
         <p class="featured-post__description">Once a year, go someplace you've never been before.</p>
         <div class="featured-post-info">
-          <img class="featured-post-info__author-photo" src="images/face2.png" alt="Face">
+          <img class="featured-post-info__author-photo" src="../static/img/face2.png" alt="Face">
           <span class="featured-post-info__author">William Wong</span>
           <span class="featured-post-info__date">September 25, 2015</span>
         </div>  
-      </div>
+      </div> -->
     </section>
 
     <section class="recent-posts">
       <h2 class="recent-posts__heading">Most Recent</h2>
+      {{ range .MostRecentPosts }}
       <div class="recent-post">  
-        <img class="recent-post__img" src="images/image3.jpg" alt="Air balloon">
-        <span class="recent-post__heading">Still Standing Tall</span>
-        <p class="recent-post__description">Life begins at the end of your comfort zone.</p>
+        <img class="recent-post__img" src="{{ .PostImg }}" alt="Air balloon">
+        <span class="recent-post__heading">{{ .Title }}</span>
+        <p class="recent-post__description">{{ .Subtitle }}</p>
         <div class="recent-post-info">
-          <img class="recent-post-info__author-photo" src="images/face2.png" alt="Face">
-          <span class="recent-post-info__author">William Wong</span>
-          <span class="recent-post-info__date">9/25/2015</span>
+          <img class="recent-post-info__author-photo" src="{{ .AuthorImg }}" alt="Face">
+          <span class="recent-post-info__author">{{ .Author }}</span>
+          <span class="recent-post-info__date">{{ .PublishDate }}</span>
         </div>  
       </div>
-      <div class="recent-post">  
-        <img class="recent-post__img" src="images/image4.png"  alt="Bridge">
+      {{ end }}
+      <!-- <div class="recent-post">  
+        <img class="recent-post__img" src="../static/img/image4.png"  alt="Bridge">
         <span class="recent-post__heading">Sunny Side Up</span>
         <p class="recent-post__description">No place is ever as bad as they tell you it's going to be.</p>
         <div class="recent-post-info">
-          <img class="recent-post-info__author-photo" src="images/face1.png" alt="Face">
+          <img class="recent-post-info__author-photo" src="../static/img/face1.png" alt="Face">
           <span class="recent-post-info__author">Mat Vogels</span>
           <span class="recent-post-info__date">9/25/2015</span>
         </div>  
       </div>
       <div class="recent-post">  
-        <img class="recent-post__img" src="images/image5.png" alt="Fog">
+        <img class="recent-post__img" src="../static/img/image5.png" alt="Fog">
         <span class="recent-post__heading">Water Falls</span>
         <p class="recent-post__description">We travel not to escape life, but for life not to escape us.</p>
         <div class="recent-post-info">
-          <img class="recent-post-info__author-photo" src="images/face1.png" alt="Face">
+          <img class="recent-post-info__author-photo" src="../static/img/face1.png" alt="Face">
           <span class="recent-post-info__author">Mat Vogels</span>
           <span class="recent-post-info__date">9/25/2015</span>
         </div>  
       </div>
       <div class="recent-post">  
-        <img class="recent-post__img" src="images/image6.png" alt="Water">
+        <img class="recent-post__img" src="../static/img/image6.png" alt="Water">
         <span class="recent-post__heading">Through the Mist</span>
         <p class="recent-post__description">Travel makes you see what a tiny place you occupy in the world.</p>
         <div class="recent-post-info">
-          <img class="recent-post-info__author-photo" src="images/face2.png" alt="Face">
+          <img class="recent-post-info__author-photo" src="../static/img/face2.png" alt="Face">
           <span class="recent-post-info__author">William Wong</span>
           <span class="recent-post-info__date">9/25/2015</span>
-        </div>  
+        </div> 
       </div>
       <div class="recent-post">  
-        <img class="recent-post__img" src="images/image7.png" alt="Fog warrior">
+        <img class="recent-post__img" src="../static/img/image7.png" alt="Fog warrior">
         <span class="recent-post__heading">Awaken Early</span>
         <p class="recent-post__description">Not all those who wander are lost.</p>
         <div class="recent-post-info">
-          <img class="recent-post-info__author-photo" src="images/face1.png" alt="Face">
+          <img class="recent-post-info__author-photo" src="../static/img/face1.png" alt="Face">
           <span class="recent-post-info__author">Mat Vogels</span>
           <span class="recent-post-info__date">9/25/2015</span>
         </div>  
       </div>
       <div class="recent-post">  
-        <img class="recent-post__img" src="images/image8.png" alt="waterfall">
+        <img class="recent-post__img" src="../static/img/image8.png" alt="waterfall">
         <span class="recent-post__heading">Try it Always</span>
         <p class="recent-post__description">The world is a book, and those who do not travel read only one page.</p>
         <div class="recent-post-info">
-          <img class="recent-post-info__author-photo" src="images/face1.png" alt="Face">
+          <img class="recent-post-info__author-photo" src="../static/img/face1.png" alt="Face">
           <span class="recent-post-info__author">Mat Vogels</span>
           <span class="recent-post-info__date">9/25/2015</span>
         </div>  
-      </div>
+      </div>-->
     </section>
 
     <footer class="basement">
-      <span class="basement__title">Escape.</span>
-      <nav class="basement-nav">
-        <a class="basement-nav__ref" href="#">Home</a>
-        <a class="basement-nav__ref" href="#">Categories</a>
-        <a class="basement-nav__ref" href="#">About</a>
-        <a class="basement-nav__ref" href="#">Contact</a>
-      </nav>
+      <form class="basement-form">
+        <h2 class="basement-form__heading">Stay in Touch</h2>
+        <input class="basement-form__input-field" type="text" placeholder="Enter your email address">
+        <input class="basement-form__button" type="submit" value="Submit">
+      </form>
+      <div class="basement-menu">
+        <span class="basement-menu__title">Escape.</span>
+        <nav class="basement-nav">
+          <a class="basement-nav__ref" href="#">Home</a>
+          <a class="basement-nav__ref" href="#">Categories</a>
+          <a class="basement-nav__ref" href="#">About</a>
+          <a class="basement-nav__ref" href="#">Contact</a>
+        </nav>
+      </div>
     </footer>
 
    </body>
