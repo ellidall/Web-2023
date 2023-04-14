@@ -1,6 +1,7 @@
 .page
 {
     margin: 0;
+    background: #F7F7F7;
 }
 
 .heading
@@ -61,7 +62,6 @@
     font-weight: 400;
     /*margin: 12% 0 0;*/
     color: #ffffff;
-    width: 100%;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -74,7 +74,6 @@
     font-family: 'Oxygen';
     color: #ffffff;
     opacity: 63%;
-    width: 100%;
     text-align: center;
     padding: 0;
     margin: 1.5% 0 0;
@@ -214,7 +213,14 @@
 .featured-post-info
 {
     display: flex;
+    justify-content: space-between;
+}
+
+.author
+{
+    display: flex;
     align-items: center;
+    column-gap: 10px;
 }
 
 .featured-post-info__author-photo
@@ -232,8 +238,7 @@
     line-height: 35px;
     color: #ffffff;
     opacity: 70%;
-    margin: 0 0 0 10px;
-    width: 200px;
+    margin: 0;
 }
 
 .featured-post-info__date
@@ -244,7 +249,7 @@
     line-height: 35px;
     color: #ffffff;
     opacity: 70%;
-    margin: 0 0 0 87px;
+    margin: 0;
 }
 
 .recent-posts
@@ -312,35 +317,38 @@
 .recent-post-info
 {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0 13px 0 13px;
+    margin: 0;
+    background: #FCFCFC;
+    border-top: solid 1px #EFEFEF;
 }
 
 .recent-post-info__author-photo
 {
     width: 26px;
     height: 26px;
-    margin: 0 0 0 13px;
+    margin: 0;
 }
 
 .recent-post-info__author
 {
     font-family: 'Oxygen';
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 35px;
     color: #999999;
-    margin: 0 0 0 10px;
-    min-width: 150px;
+    margin: 0;
 }
 
 .recent-post-info__date
 {
     font-family: 'Oxygen';
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 35px;
     color: #999999;
-    margin: 0 0 0 35px;
+    margin: 0;
 }
 
 .basement

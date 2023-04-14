@@ -1,6 +1,7 @@
 .page
 {
     margin: 0;
+    background: #F7F7F7;
 }
 
 .heading
@@ -8,8 +9,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1.39% 17% 0;
+    padding: 1.39% 17% 0;
     width: 66%;
+    background: #E5E5E5;
     /*max-width: 1920px;*/
 }
 
@@ -44,7 +46,9 @@
 
 .logo
 {
-    margin: 10% 0;
+    padding: 10% 0;
+    margin: 0;
+    background: #E5E5E5;
 }
 
 .logo__title
