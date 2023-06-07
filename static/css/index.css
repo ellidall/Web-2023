@@ -199,6 +199,12 @@
     margin: 0 0 5px;
 }
 
+.featured-post__title_link
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .featured-post__description
 {
     font-family: 'Oxygen';
@@ -276,6 +282,12 @@
     line-height: 27px;
     letter-spacing: 2px;
     margin: 0 0 19px;
+}
+
+.recent-post__title_link
+{
+    text-decoration: none;
+    color: #000000;
 }
 
 .recent-post

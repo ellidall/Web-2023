@@ -6,6 +6,12 @@ CREATE TABLE post (
     author_url VARCHAR(255),
     publish_date VARCHAR(255),
     image_url VARCHAR(255),
+    modifier VARCHAR(255),
     featured TINYINT(1) DEFAULT 0,
-    PRIMARY KEY (post_id).
+    content TEXT NOT NULL,
+    PRIMARY KEY (post_id)
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE blog;
+SELECT * FROM post;
+DROP TABLE post;
+

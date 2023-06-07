@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin</title>
+  <link href="/static/css/admin.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+  <script src="/static/js/admin.js" defer></script>
+</head>
+
+<body class="page">
+
+
+  <header class="heading">
+    <div class="heading-logo">
+      <h2 class="heading-logo__title">Escape.</h2>
+      <span class="heading-logo__subtitle">author</span>
+    </div>
+    <nav class="heading-icons">
+      <button class="heading-icons__account">N</button>
+      <img class="heading-icons__exit" src="/static/img/log-out.png">
+    </nav>
+  </header>
+
+  <div class="form-heading">
+    <div class="main-title">
+      <h2 class="main-title__title">New Post</h2>
+      <span class="main-title__subtitle">Fill out the form bellow and publish your article</span>
+    </div>
+    <button class="form-heading__publish">Publish</button>
+  </div>
+
+
+
+  <div class="post-info">
+    <h2 class="post-info__title">Main Information</h2>
+    <div class="form">
+
+      <span class="form__field-name">Title</span>
+      <input class="form__field-title" type="text" placeholder="New Post" required />
+
+      <span class="form__field-name">Short description</span>
+      <input class="form__field-subtitle" type="text" placeholder="Please, enter any description" required />
+
+      <span class="form__field-name">Author name</span>
+      <input class="form__field-author-name" type="text" required />
+
+      <span class="form__field-name">Author Photo</span>
+      <div class="form-author">
+        <label class="author" for="author">
+          <img class="author__photo" src="/static/img/Avatar.png">
+          <img class="author__camera hidden" src="/static/img/camera.png">
+          <span class="author__upload">Upload</span>
+        </label>
+        <label class="remove-author hidden">
+          <img class="remove-author__trash" src="/static/img/Trach.png">
+          <span class="remove-author__remove">Remove</span>
+        </label>
+        <input class="author__field" type="file" id="author">
+      </div>
+
+      <span class="form__field-name">Publish Date</span>
+      <input class="form__field-date" type="date" required />
+
+      <span class="form__field-name">Hero Image</span>
+      <label class="article-preview" for="article-preview">
+        <img class="article-preview__photo" src="/static/img/camera10mb.svg">
+      </label>
+      <div class="form-article-preview">
+        <label class="article-preview-upload-new" for="article-preview">
+          <img class="article-preview__camera hidden" src="/static/img/camera.png">
+          <span class="article-preview__upload hidden">Upload New</span>
+        </label>
+        <label class="remove-article-preview hidden">
+          <img class="remove-article-preview__trash" src="/static/img/Trach.png">
+          <span class="remove-article-preview__remove">Remove</span>
+        </label>
+        <input class="article-preview__field" type="file" id="article-preview">
+      </div>
+      <span class="form__field-description">Size up to 10mb. Format: png, jpeg, gif.</span>
+
+    </div>
+
+    <div class="show-post">
+
+      <span class="show-post__title">Article preview</span>
+      <div class="show-post__article-preview">
+        <div class="article-preview-inside">
+          <img class="article-preview-inside__image" src="/static/img/3points.png">
+          <span class="article-preview-inside__title">New Post</span>
+          <span class="article-preview-inside__description">Please, enter any description</span>
+          <img class="article-preview-inside__logo" src="/static/img/empty-article.png">
+        </div>
+      </div>
+      <div class="article-preview-vertical-gradient"></div>
+      <div class="article-preview-horizontal-gradient"></div>
+
+      <span class="show-post__title">Post card preview</span>
+      <div class="show-post__post-card-preview">
+        <div class="post-card-preview-inside">
+          <img class="post-card-preview-inside__logo" src="/static/img/empty-postcard.png">
+          <span class="post-card-preview-inside__title">New Post</span>
+          <span class="post-card-preview-inside__description">Please, enter any description</span>
+          <div class="post-card-preview-inside__author-date">
+            <div class="post-card-preview-inside-author">
+              <img class="post-card-preview-inside-author__avatar" src="/static/img/empty-avatar.png">
+              <span class="post-card-preview-inside-author__name">Enter author name</span>
+            </div>
+            <span class="post-card-preview-inside-date">mm/dd/yyyy</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-card-preview-vertical-gradient"></div>
+      <div class="post-card-preview-horizontal-gradient"></div>
+
+    </div>
+  </div>
+
+  <div class="input-content">
+    <h2 class="input-content__title">Content</h2>
+    <span class="input-content__subtitle">Post content (plain text)</span>
+    <textarea class="input-content__content" placeholder="Type anything you want ..."></textarea>
+  </div>
+
+
+</body>
+
+</html>

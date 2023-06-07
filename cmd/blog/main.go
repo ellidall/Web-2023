@@ -7,11 +7,12 @@ import (
 	"net/http"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/gorilla/mux"
 	"github.com/jmoiron/sqlx"
 )
 
 const (
-	port =         ":3000"
+	port         = ":3000"
 	dbDriverName = "mysql"
 )
 
@@ -22,10 +23,16 @@ func main() {
 	}
 
 	dbx := sqlx.NewDb(db, dbDriverName)
-	mux := http.NewServeMux()
-	mux.HandleFunc("/home", index(dbx))
 
-	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
+	mux := mux.NewRouter()
+	mux.HandleFunc("/home", index(dbx))
+	mux.HandleFunc("/post/{postID}", post(dbx))
+	mux.HandleFunc("/admin", admin(dbx))
+	mux.HandleFunc("/login", login)
+	mux.HandleFunc("/api/post", createPost(dbx)).Methods(http.MethodPost)
+
+	mux.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
+	// mux.PathPrefix("/js/").Handler(http.StripPrefix("/js/", http.FileServer(http.Dir("./js"))))
 
 	fmt.Println("Start server " + port)
 	err = http.ListenAndServe(port, mux)

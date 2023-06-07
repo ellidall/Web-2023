@@ -1,0 +1,139 @@
+.page
+{
+    margin: 0;
+    background: url("../img/initpage-background.png") no-repeat;
+    background-size: cover;
+}
+
+.page__content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 7% 9% 0% 16%;
+}
+
+.info
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.info__title
+{
+    margin: 0;
+    font-family: 'Lora';
+    font-size: 45.5px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.info__subtitle
+{
+    font-family: 'Oxygen';
+    font-size: 24.5px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.info__description
+{
+    width: 100%;
+    margin: 16px 0 0 0;
+    font-family: 'Oxygen';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.form
+{
+    width: 480px;
+    height: 560px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title
+{
+    margin: 56px 340px 50px 40px;
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.form__input-heading
+{
+    margin: 0 0 0 40px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7A7A7A;
+}
+
+.form__input-password, .form__input-email
+{
+    margin: 0 0 40px 40px;
+    width: 400px;
+    height: 40px;
+    border: 0;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+.form__input-password:invalid, .form__input-email:invalid
+{
+    outline: none;
+    border: 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.form__input-password:valid, .form__input-email:valid
+{
+    outline: none;
+    border: 0;
+    background: #F7F7F7;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+.form__input-password:focus, .form__input-email:focus
+{
+    outline: none;
+    border: 0;
+    background: #F7F7F7;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+.show-password
+{
+    width: 22px;
+    position: absolute;
+    right: 180px; 
+    top: 372px;
+}
+
+.form__button
+{
+    margin: 0 0 0 40px;
+    width: 93px;
+    height: 48px;
+    background: #DD783F;
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Blog</title>
-    <link href="static/css/index.css" rel="stylesheet">
+    <link href="/static/css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
   </head>
   <body class="page">
@@ -36,7 +36,7 @@
       <h2 class="featured-posts__heading">Featured Posts</h2>
       {{ range .FeaturedPosts }}
       <div class="featured-post {{ .ImgModifier }}"> 
-        <span class="featured-post__heading">{{ .Title }}</span>
+        <span class="featured-post__heading"><a class="featured-post__title_link" href="/post/{{ .PostID }}">{{ .Title }}</a></span>
         <p class="featured-post__description">{{ .Subtitle }}</p>
         <div class="featured-post-info">
           <div class="author">
@@ -54,7 +54,7 @@
       {{ range .MostRecentPosts }}
       <div class="recent-post">  
         <img class="recent-post__img" src="{{ .PostImg }}" alt="Air balloon">
-        <span class="recent-post__heading">{{ .Title }}</span>
+        <span class="recent-post__heading"><a class="recent-post__title_link" href="/post/{{ .PostID }}">{{ .Title }}</a></span>
         <p class="recent-post__description">{{ .Subtitle }}</p>
         <div class="recent-post-info">
           <div class="author">
